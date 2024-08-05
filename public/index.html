@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Game</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.31.1/min/vs/editor/editor.main.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <div class="heading">
+        <div id="logo"></div>
+        <h1>SQL Game</h1>
+    </div>
+    <div class="game-button">
+        <div class="user-id">User id: <span id="user-id-span">Click start game to generate user's session id</span></div>
+        <div>
+            <button id="start-game">Start Game</button>
+            <button id="end-game">End Game</button>
+        </div>
+    </div>
+    <div id="editor-container"></div>
+    <button id="execute-query">Execute Query</button>
+    <div id="query-result">
+        <h3>Query Result:</h3>
+        <h4>Prompt: <span style="color: red" id="prompt"></span></h4>
+        <pre id="result"></pre>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.31.1/min/vs/loader.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
